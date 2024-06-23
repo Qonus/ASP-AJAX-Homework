@@ -1,0 +1,21 @@
+﻿@page
+@model WebApplication1.Pages.ProfileModel
+@{
+}
+
+
+<h1>Profile</h1>
+
+<form method="post">
+    <h2>Sign Up form: </h2>
+    <label>Name: </label>
+    <input asp-for="Prd.Name" type="text" /> <br />
+    <label>Email: </label>
+    <input asp-for="Prd.Email" type="email" /> <br />
+    <label>Age: </label>
+    <input asp-for="Prd.Age" type="number" /> <br />
+    <input type="submit" value="Sign Up" />
+</form>
+<div style="white-space: pre-wrap;">
+    <h2>@Model.Message</h2>
+</div>

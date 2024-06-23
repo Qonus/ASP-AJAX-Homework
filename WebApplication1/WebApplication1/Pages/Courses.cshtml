@@ -1,0 +1,17 @@
+﻿@page
+@model WebApplication1.Pages.CoursesModel
+@{
+}
+
+<h1>Courses</h1>
+
+<h2 class="display-4">Welcome my fellow customers!</h2>
+<h4>Are you getting confused on current economical state of our country? No worries, cuz I got you covered! I will provide you with detailed information on Current economical state of this world, this will allow you to make future predictions and much more. Everything only for 5 dollars!</h4>
+<form method="post">
+    <h2>Enter amount of money in tenge: </h2>
+    <input type="number" name="tenge" />
+    <input type="submit" value="pay 5 dollars" />
+</form>
+<h2>@(Model.Tenge * 0.0022) dollars</h2>
+<h2>@(Model.Tenge * 0.2) rubles</h2>
+<h2>@(Model.Tenge * 0.0021) euro</h2>
